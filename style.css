@@ -1,0 +1,110 @@
+:root {
+  --ink: #1b1035;
+  --cream: #fff7ea;
+  --primary-text: #ffffff;
+  --teal: #00c9a7;
+  --pink: #ff3d7f;
+  --yellow: #ffc93c;
+  --page-width: 1040px;
+  --gutter: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cream);
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  flex-grow: 1;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.header-bar {
+  background-color: var(--ink);
+  color: var(--primary-text);
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-bar {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.navbar {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--primary-text);
+  padding: 10px 20px;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.link:hover,
+.link:focus-visible {
+  background-color: var(--yellow);
+  color: var(--ink);
+  outline: transparent;
+}
+
+/* Main */
+
+.main {
+  flex-grow: 1;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  gap: 30px;
+  grid-template-areas: "balance income expense";
+}
+
+.card {
+  padding: 22px 24px;
+  border: 3px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--ink);
+  color: var(--ink);
+}
+
+.card-span {
+  font-size: 14px;
+  font-weight: 700;
+}
+#balance {
+  grid-area: balance;
+  background-color: var(--yellow);
+}
+
+#income {
+  grid-area: income;
+  background-color: var(--teal);
+}
+
+#expense {
+  grid-area: expense;
+  background-color: var(--pink);
+}

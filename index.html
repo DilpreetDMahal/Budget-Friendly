@@ -1,1 +1,50 @@
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Friendly</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <!-- Header Section -->
+    <header class="header-bar">
+      <div class="wrapper header-content">
+        <!-- Website title -->
+        <div class="title-bar">
+          <h1 class="title">Budget Tracker</h1>
+        </div>
+        <!-- Navbar for links -->
+        <nav class="navbar">
+          <a class="link left" href="#">Home</a>
+          <a class="link right" href="#">Goals</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main wrapper">
+      <div class="card-container">
+        <div class="card" id="balance">
+          <span class="card-span">Balance</span>
+          <h1 id="total-balance"></h1>
+        </div>
+        <div class="card" id="income">
+          <span class="card-span">Income</span>
+        </div>
+        <div class="card" id="expense">
+          <span class="card-span">Expenses</span>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="data-entry"></div>
+        <div class="display"></div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>
